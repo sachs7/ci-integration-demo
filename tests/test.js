@@ -74,7 +74,7 @@ test('Pick option from select', async t => {
     await t
         .click(page.interfaceSelect)
         .click(page.interfaceSelectOption.withText('Both'))
-        .expect(page.interfaceSelect.value).eql('Both');
+        .expect(page.interfaceSelect.value).eql('Bot');
 });
 
 
@@ -102,5 +102,5 @@ test('Filling a form', async t => {
     await t
         .wait(500)
         .click(page.submitButton)
-        .expect(page.results.innerText).contains('Bruce Wayn');
+        .expect(page.results.innerText).contains('Bruce Wayne');
 });
