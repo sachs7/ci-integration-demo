@@ -74,7 +74,7 @@ test('Pick option from select', async t => {
     await t
         .click(page.interfaceSelect)
         .click(page.interfaceSelectOption.withText('Both'))
-        .expect(page.interfaceSelect.value).eql('Bot');
+        .expect(page.interfaceSelect.value).eql('Both');
 });
 
 
